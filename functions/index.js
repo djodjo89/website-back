@@ -36,7 +36,7 @@ app.post('/contact', (req, res) => {
     const emptySubject = subject === '';
 
     if (correctEmail && !emptySubject) {
-const transport=mailer.createTransport({
+        const transport=mailer.createTransport({
             host: 'smtp.gmail.com',
             service: 'Gmail',
             port: 465,
